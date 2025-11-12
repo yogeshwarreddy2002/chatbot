@@ -7,7 +7,7 @@ with st.sidebar:
     st.write("This is your AI Chat Assistant.")
     st.write("You can ask general knowledge, coding, help, ideas, etc.")
     st.write("---")
-user_prompt=st.text_input("enter your prompt: ")
+user_prompt=st.text_input("Enter your prompt: ")
 send_button=st.button("send")
 if user_prompt and send_button:
  client = genai.Client(api_key="AIzaSyBdlcmcff1X7CUMgzar8P7rvV0XHQGf2YI")
@@ -16,6 +16,7 @@ if user_prompt and send_button:
   )
  st.title("AI Response:")
  st.write(response.text)
+
 
 
 
