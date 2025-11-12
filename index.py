@@ -9,7 +9,7 @@ with st.sidebar:
     st.write("---")
 c1=st.columns(2)
 with c1:
-  user_prompt=st.text_input("enter your prompt: ")
+user_prompt=st.text_input("enter your prompt: ")
 send_button=st.button("send")
 if user_prompt and send_button:
  client = genai.Client(api_key="AIzaSyBdlcmcff1X7CUMgzar8P7rvV0XHQGf2YI")
@@ -18,5 +18,6 @@ if user_prompt and send_button:
   )
  st.title("AI Response:")
  st.write(response.text)
+
 
 
